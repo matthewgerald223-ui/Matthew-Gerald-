@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekpah Matthew | Web Developer & Cybersecurity Enthusiast</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #00ff88;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #00ff88;
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #a0a0a0;
+            font-size: 15px;
+        }
+        .card {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #00ff88;
+            border-radius: 6px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: #00e1ff;
+            margin-top: 0;
+            font-size: 20px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-item {
+            background: #2a2a2a;
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #00ff88;
+            border: 1px solid #333;
+        }
+        /* Slideshow Styling */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 20px auto;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 2px solid #00ff88;
+            background: #000;
+        }
+        .mySlides {
+            display: none;
+        }
+        .mySlides img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 12px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0,0,0,0.6);
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: #00ff88;
+            color: #000;
+        }
+        /* Contact List */
+        .contact-list p {
+            margin: 8px 0;
+        }
+        a {
+            color: #00e1ff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Ekpah Matthew</h1>
+            <div class="subtitle">Computer Science Student | Web Developer | Cybersecurity & OSINT Researcher</div>
+        </header>
+
+        <!-- Image Slideshow Section -->
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="photo1.jpg" alt="Ekpah Matthew Photo 1">
+            </div>
+            <div class="mySlides">
+                <img src="photo2.jpg" alt="Ekpah Matthew Photo 2">
+            </div>
+            <div class="mySlides">
+                <img src="photo3.jpg" alt="Ekpah Matthew Photo 3">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- About Section -->
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I am a 17-year-old Computer Science student at <strong>Federal University Lokoja</strong> with a strong focus on practical web development and ethical cybersecurity. I specialize in building responsive web layouts, exploring Open Source Intelligence (OSINT) methodology, and understanding web security architecture.</p>
+            <p>My goal is to build secure digital tools, perform network security investigations, and contribute to the global cybersecurity landscape.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="card">
+            <h2>Technical Skills & Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-item">HTML5 / CSS3</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Linux / Bash</div>
+                <div class="skill-item">Git & GitHub</div>
+                <div class="skill-item">OSINT</div>
+                <div class="skill-item">Web Security</div>
+                <div class="skill-item">Blogger / SEO</div>
+            </div>
+        </div>
+
+        <!-- Detailed Projects Section -->
+        <div class="card">
+            <h2>Featured Projects</h2>
+            <ul>
+                <li>
+                    <strong>Goal Matrix:</strong> A customized sports news and analytics portal configured on Blogger, optimized with custom XML sitemaps and indexed via Google Search Console for live web discovery.
+                </li>
+                <li>
+                    <strong>Car Dealership Landing Pages:</strong> Fully responsive prototype landing pages designed for local auto dealers (including KD Autos and Nagarta Motors) using HTML5, modern CSS styling, and GitHub Pages hosting.
+                </li>
+                <li>
+                    <strong>Cybersecurity & OSINT Labs:</strong> Documenting practical learning modules through platforms like TryHackMe and Hack The Box, focusing on network recon, HTTP security headers, domain WHOIS analysis, and ethical scam-baiting techniques.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Education & Certification Journey -->
+        <div class="card">
+            <h2>Education & Pathways</h2>
+            <p><strong>B.Sc. Computer Science</strong> — Federal University Lokoja (In Progress)</p>
+            <p><strong>Self-Directed Security Focus:</strong> Web application security principles, reverse proxy integration (Cloudflare), port filtering concepts, and hands-on Python scripting via Pydroid 3 and TrebEdit environments.</p>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="card contact-list">
+            <h2>Connect With Me</h2>
+            <p><strong>Phone Call:</strong> <a href="tel:07072521896">07072521896</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/2348129076987" target="_blank">08129076987</a></p>
+            <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@Matthewgerald305" target="_blank">@Matthewgerald305</a></p>
+            <p><strong>X (Twitter):</strong> <a href="https://x.com/MatthewGerald" target="_blank">Matthew Gerald</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript for Slideshow -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+</body>
+</html>
